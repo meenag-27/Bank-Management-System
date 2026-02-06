@@ -7,12 +7,12 @@
             background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
             font-family: Arial, sans-serif;
             height:100vh;
-            display:flex;
+            
             justify-content:center;
             align-items:center;
         }
         .card{
-            background:white;
+            background:red;
             width:400px;
             padding:30px;
             border-radius:15px;
@@ -21,7 +21,7 @@
         }
         h1{
             color:#2c5364;
-            margin-bottom:20px;
+            margin-bottom:40px;
         }
         .balance{
             font-size:30px;
@@ -33,7 +33,7 @@
             w:100%;
             padding:12px;
             background:#2c5364;
-            color:white;
+            color:blue;
             border:none;
             border-radius:8px;
             font-size:16px;
@@ -49,7 +49,7 @@
 <body onload="showBalance()">
 
 <div class="card">
-    <h1>Account Balance</h1>
+    <h1>Remaining Balance</h1>
     <div class="balance" id="balance"></div>
 
     <button onclick="window.location.href='transfer.html'">
