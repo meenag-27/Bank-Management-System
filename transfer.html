@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Money Transfer</title>
+    <title>Money Transfer Module</title>
     <style>
         body{
             background: linear-gradient(135deg,#1e3c72,#2a5298);
@@ -48,7 +48,7 @@
         .msg{
             margin-top:15px;
             font-weight:bold;
-            color:green;
+            color:red;
         }
     </style>
 </head>
@@ -66,7 +66,7 @@
 
     <input type="number" id="amount" placeholder="Transfer Amount">
 
-    <button onclick="transferMoney()">Transfer</button>
+    <button onclick="transferMoney()">Transferrd Amount</button>
 
     <div class="msg" id="message"></div>
 
@@ -87,7 +87,7 @@
             return;
         }
 
-        if(isNaN(amt) || amt <= 0){
+        if(isNaN(amt) || amt <= 10){
             alert("Enter a valid transfer amount");
             return;
         }
